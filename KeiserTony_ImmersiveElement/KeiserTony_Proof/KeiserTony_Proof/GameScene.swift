@@ -1,11 +1,12 @@
 //
 //  Tony Keiser
-//  MGD Term 1608
-//  KeiserTony_Gold
+//  MGD Term 1609
+//  KeiserTony_IAD
 //
 
 import SpriteKit
 import AVFoundation
+import Firebase
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     // Global Variable(s)
@@ -22,6 +23,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var multi = 1
     var multiTimer = NSTimer()
     var tripleShot = 0
+    
+    let firebase = FIRDatabase.database().reference()
+    var emailString : String = ""
+    var passString : String = ""
     
     // Bar Variable(s)
     var healthBar:SKSpriteNode!
@@ -40,6 +45,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     override func didMoveToView(view: SKView) {
         // Setup Variables 
+        emailString = NSUserDefaults.standardUserDefaults().stringForKey("email")!
+        passString = NSUserDefaults.standardUserDefaults().stringForKey("password")!
         player = self.childNodeWithName("player") as! SKSpriteNode
         zombieA = self.childNodeWithName("zombie1") as! SKSpriteNode
         zombieB = self.childNodeWithName("zombie2") as! SKSpriteNode
@@ -365,6 +372,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 }
                 scores.setValue(score, forKey: "last")
                 scores.synchronize()
+                // Save Score to Onlie Database
+                updateScore(emailString, password: passString, newScore: score)
                 
                 // Go to MainMenu
                 let game:GameScene = GameScene(fileNamed: "MainMenu")!
@@ -468,5 +477,35 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         multiTimer.invalidate()
         multi = 1
         print("multiplter off")
+    }
+
+    // Update Score
+    func updateScore (email: String, password: String, newScore: Int) -> Void {
+        FIRAuth.auth()?.signInWithEmail(email, password: password) { (user, error) in
+            if (error == nil) {
+                let date = NSCalendar.init(calendarIdentifier: NSCalendarIdentifierGregorian)
+                let month = (date?.component(NSCalendarUnit.Month, fromDate: NSDate()))!
+                let day = (date?.component(NSCalendarUnit.Day, fromDate: NSDate()))!
+                let year = (date?.component(NSCalendarUnit.Year, fromDate: NSDate()))!
+                let todayDate = "\(month)/\(day)/\(year)"
+                self.firebase.child("users").child(user!.uid).observeEventType(.Value, withBlock: { (snapshot) in
+                    let snapMonth = snapshot.value!.objectForKey("monthDate") as! String
+                    let snapScore = snapshot.value!.objectForKey("dayScore") as! Int
+                    let snapMonthScore = snapshot.value!.objectForKey("monthScore") as! Int
+                    
+                    // Check older score and update new score
+                    if (snapScore < newScore) {
+                        // Update Score && Date
+                        self.firebase.child("users").child(user!.uid).setValue(["email": email, "monthScore":snapMonthScore, "dayScore":newScore,
+                            "todayDate":todayDate, "monthDate":snapMonth])
+                        if (snapMonthScore < newScore) {
+                            // Update Score && Date
+                            self.firebase.child("users").child(user!.uid).setValue(["email": email, "monthScore":newScore, "dayScore":newScore,
+                                "todayDate":todayDate, "monthDate":todayDate])
+                        }
+                    }
+                });
+            }
+        } // End Update Score
     }
 }

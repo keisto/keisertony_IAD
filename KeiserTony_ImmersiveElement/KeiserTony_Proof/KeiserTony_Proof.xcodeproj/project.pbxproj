@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0AA2DF91527CF25F42B3080 /* Pods_KeiserTony_Proof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682D8D6106C3F196F66906BC /* Pods_KeiserTony_Proof.framework */; };
 		B016336C1D669E9C005C58A6 /* Pause.sks in Resources */ = {isa = PBXBuildFile; fileRef = B016336B1D669E9B005C58A6 /* Pause.sks */; };
 		B020A0931D6FE15F0080BD14 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020A0921D6FE15F0080BD14 /* MainMenu.swift */; };
 		B0254A541D67BF9200251CF6 /* zombiedeath.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = B0254A531D67BF9200251CF6 /* zombiedeath.atlasc */; };
@@ -34,12 +35,20 @@
 		B0D2BF2A1D53CC46003E679F /* gunfire.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BF291D53CC46003E679F /* gunfire.wav */; };
 		B0D2BF2C1D53CCC1003E679F /* explode.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BF2B1D53CCC1003E679F /* explode.wav */; };
 		B0D2BF2E1D53E541003E679F /* zombie2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BF2D1D53E541003E679F /* zombie2.wav */; };
+		B95B56481D8B6C4700A4F501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B95B56471D8B6C4700A4F501 /* GoogleService-Info.plist */; };
+		B95ED2F51D8B882C00EC29E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2F41D8B882C00EC29E1 /* LoginViewController.swift */; };
+		B95ED2F81D8D8C3500EC29E1 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2F71D8D8C3500EC29E1 /* ScoresViewController.swift */; };
 		B979EC041D849B7C00EFDDAA /* NewZombie1.sks in Resources */ = {isa = PBXBuildFile; fileRef = B979EC031D849B7C00EFDDAA /* NewZombie1.sks */; };
 		B979EC061D849BAF00EFDDAA /* NewZombie2.sks in Resources */ = {isa = PBXBuildFile; fileRef = B979EC051D849BAF00EFDDAA /* NewZombie2.sks */; };
+		B9E5E92F1D8E25B9004613F7 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E5E92E1D8E25B9004613F7 /* share.png */; };
+		B9E5E9311D8E274A004613F7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E5E9301D8E274A004613F7 /* Social.framework */; };
 		B9E862171D84ECAA002F0D41 /* Box.sks in Resources */ = {isa = PBXBuildFile; fileRef = B9E862161D84ECAA002F0D41 /* Box.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F50A6F1924828735AADA20 /* Pods-KeiserTony_Proof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeiserTony_Proof.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeiserTony_Proof/Pods-KeiserTony_Proof.release.xcconfig"; sourceTree = "<group>"; };
+		682D8D6106C3F196F66906BC /* Pods_KeiserTony_Proof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeiserTony_Proof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEECF58F962C98319A5ADC7F /* Pods-KeiserTony_Proof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeiserTony_Proof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeiserTony_Proof/Pods-KeiserTony_Proof.debug.xcconfig"; sourceTree = "<group>"; };
 		B016336B1D669E9B005C58A6 /* Pause.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Pause.sks; sourceTree = "<group>"; };
 		B020A0921D6FE15F0080BD14 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B0254A531D67BF9200251CF6 /* zombiedeath.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = zombiedeath.atlasc; sourceTree = "<group>"; };
@@ -69,8 +78,13 @@
 		B0D2BF291D53CC46003E679F /* gunfire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gunfire.wav; sourceTree = "<group>"; };
 		B0D2BF2B1D53CCC1003E679F /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
 		B0D2BF2D1D53E541003E679F /* zombie2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zombie2.wav; sourceTree = "<group>"; };
+		B95B56471D8B6C4700A4F501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B95ED2F41D8B882C00EC29E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B95ED2F71D8D8C3500EC29E1 /* ScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
 		B979EC031D849B7C00EFDDAA /* NewZombie1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NewZombie1.sks; sourceTree = "<group>"; };
 		B979EC051D849BAF00EFDDAA /* NewZombie2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NewZombie2.sks; sourceTree = "<group>"; };
+		B9E5E92E1D8E25B9004613F7 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		B9E5E9301D8E274A004613F7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B9E862161D84ECAA002F0D41 /* Box.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Box.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,12 +93,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E5E9311D8E274A004613F7 /* Social.framework in Frameworks */,
+				A0AA2DF91527CF25F42B3080 /* Pods_KeiserTony_Proof.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EC337FEEDEB3B7933DE8783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E5E9301D8E274A004613F7 /* Social.framework */,
+				682D8D6106C3F196F66906BC /* Pods_KeiserTony_Proof.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0254A571D67F96600251CF6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,8 @@
 			children = (
 				B0D2BF021D51CF2B003E679F /* KeiserTony_Proof */,
 				B0D2BF011D51CF2A003E679F /* Products */,
+				B8BEF091077ED63467403B93 /* Pods */,
+				3EC337FEEDEB3B7933DE8783 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,12 +154,16 @@
 				B06E6B951D6E8CFD002B0F74 /* Credits.swift */,
 				B06E6B931D6E8CE3002B0F74 /* Howto.swift */,
 				B0D2BF071D51CF2C003E679F /* GameScene.swift */,
+				B95ED2F41D8B882C00EC29E1 /* LoginViewController.swift */,
+				B95ED2F71D8D8C3500EC29E1 /* ScoresViewController.swift */,
 				B0D2BF091D51CF2C003E679F /* GameViewController.swift */,
+				B9E5E92E1D8E25B9004613F7 /* share.png */,
 				B0D2BF1A1D53034A003E679F /* Sounds */,
 				B0D2BF0B1D51CF2C003E679F /* Main.storyboard */,
 				B0254A531D67BF9200251CF6 /* zombiedeath.atlasc */,
 				B0D2BF0E1D51CF2C003E679F /* Assets.xcassets */,
 				B0D2BF101D51CF2C003E679F /* LaunchScreen.storyboard */,
+				B95B56471D8B6C4700A4F501 /* GoogleService-Info.plist */,
 				B0D2BF131D51CF2C003E679F /* Info.plist */,
 			);
 			path = KeiserTony_Proof;
@@ -155,6 +186,15 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		B8BEF091077ED63467403B93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEECF58F962C98319A5ADC7F /* Pods-KeiserTony_Proof.debug.xcconfig */,
+				00F50A6F1924828735AADA20 /* Pods-KeiserTony_Proof.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D2BF161D51CF2C003E679F /* Build configuration list for PBXNativeTarget "KeiserTony_Proof" */;
 			buildPhases = (
+				53E46B0B32F277219326AF90 /* [CP] Check Pods Manifest.lock */,
 				B0D2BEFC1D51CF2A003E679F /* Sources */,
 				B0D2BEFD1D51CF2A003E679F /* Frameworks */,
 				B0D2BEFE1D51CF2A003E679F /* Resources */,
+				B81718F85C51C5F92AB38CFE /* [CP] Embed Pods Frameworks */,
+				37C199463CCCEFAD549A6EB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +259,7 @@
 			files = (
 				B08210EA1D5D16690021E7D0 /* pain.wav in Resources */,
 				B979EC041D849B7C00EFDDAA /* NewZombie1.sks in Resources */,
+				B95B56481D8B6C4700A4F501 /* GoogleService-Info.plist in Resources */,
 				B979EC061D849BAF00EFDDAA /* NewZombie2.sks in Resources */,
 				B0D2BF251D53CC3D003E679F /* ejectmag.wav in Resources */,
 				B0D2BF061D51CF2C003E679F /* GameScene.sks in Resources */,
@@ -232,6 +276,7 @@
 				B9E862171D84ECAA002F0D41 /* Box.sks in Resources */,
 				B06E6B8E1D6E8817002B0F74 /* MainMenu.sks in Resources */,
 				B08210EC1D5D30100021E7D0 /* Bullet.sks in Resources */,
+				B9E5E92F1D8E25B9004613F7 /* share.png in Resources */,
 				B0D2BF261D53CC3D003E679F /* loadmag.wav in Resources */,
 				B06E6B901D6E8C7C002B0F74 /* Credits.sks in Resources */,
 				B06E6B921D6E8CB3002B0F74 /* Howto.sks in Resources */,
@@ -243,13 +288,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37C199463CCCEFAD549A6EB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeiserTony_Proof/Pods-KeiserTony_Proof-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53E46B0B32F277219326AF90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B81718F85C51C5F92AB38CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeiserTony_Proof/Pods-KeiserTony_Proof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0D2BEFC1D51CF2A003E679F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95ED2F51D8B882C00EC29E1 /* LoginViewController.swift in Sources */,
 				B0D2BF081D51CF2C003E679F /* GameScene.swift in Sources */,
 				B0D2BF0A1D51CF2C003E679F /* GameViewController.swift in Sources */,
+				B95ED2F81D8D8C3500EC29E1 /* ScoresViewController.swift in Sources */,
 				B020A0931D6FE15F0080BD14 /* MainMenu.swift in Sources */,
 				B06E6B941D6E8CE3002B0F74 /* Howto.swift in Sources */,
 				B0D2BF041D51CF2B003E679F /* AppDelegate.swift in Sources */,
@@ -364,6 +459,7 @@
 		};
 		B0D2BF171D51CF2C003E679F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEECF58F962C98319A5ADC7F /* Pods-KeiserTony_Proof.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -379,6 +475,7 @@
 		};
 		B0D2BF181D51CF2C003E679F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F50A6F1924828735AADA20 /* Pods-KeiserTony_Proof.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
